@@ -3,6 +3,7 @@ import CountCharts from '@/components/CountCharts';
 import UserCards from '@/components/UserCards';
 import React from 'react';
 import FinanceChart from '@/components/FinanceChart';
+import EventCalender from '@/components/EventCalender';
 
 const page = () => {
   return (
@@ -32,7 +33,9 @@ const page = () => {
         </div>
       </div>
       {/* right  */}
-      <div className="w-full lg:w-1/3  bg-green-700">right</div>
+      <div className="w-full lg:w-1/3 flex flex-col gap-8">
+        <EventCalender />
+      </div>
     </div>
   );
 };
